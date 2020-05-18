@@ -15,11 +15,6 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         EventBus.getDefault().register(this);
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
         startActivity(new Intent(this, SecondActivity.class));
     }
 
